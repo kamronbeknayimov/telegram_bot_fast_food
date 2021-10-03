@@ -10,7 +10,7 @@ db = Database()
 def start(update, context):
     start_buttons = [
         [KeyboardButton("🛒 Buyurtma qilish")],
-        [KeyboardButton("🛍 Buyurtmalarim"), KeyboardButton("👪 EVOS Oilasi")],
+        [KeyboardButton("🛍 Buyurtmalarim"), KeyboardButton("👪 Nimadir Oilasi")],
         [KeyboardButton("✍️ Fikr bildirish"), KeyboardButton("⚙️ Sozlamalar")]
     ]
     update.message.reply_text(f'Quyidagilardan birini tanlang', reply_markup=ReplyKeyboardMarkup(start_buttons,
@@ -104,7 +104,7 @@ def count_button(product_id):
 
 
 def main():
-    TOKEN = '1926201635:AAHJDpC0WSaqCixNHQfoBnY6rFqUjw4dfKg'
+    TOKEN = 'your token'
     updater = Updater(TOKEN,use_context=True)
 
     conv_handler = ConversationHandler(
