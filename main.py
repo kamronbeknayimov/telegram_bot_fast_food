@@ -104,7 +104,7 @@ def count_button(product_id):
 
 
 def main():
-    TOKEN = 'your token'
+    TOKEN = '1926201635:AAFh6Lp2HnM3Pv0yGZxJlkifeC3SC7EVOro'
     updater = Updater(TOKEN,use_context=True)
 
     conv_handler = ConversationHandler(
